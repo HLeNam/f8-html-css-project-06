@@ -25,3 +25,202 @@ select {
     font-size: inherit;
     font-family: inherit;
 }
+
+.btn {
+    --height: 62px;
+
+    display: inline-block;
+    min-width: 170px;
+    height: var(--height);
+    line-height: var(--height);
+    color: #fdfdfd;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66667; /* 166.667% */
+    background: #5d3bee;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* ====================== Header ===================================================================== */
+.header {
+    padding-top: 20px;
+    background: #fbfaff;
+}
+
+.header__container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__inner {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__mail {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__mail-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgb(93 59 238 / 20%);
+}
+
+.header__mail-address {
+    position: relative;
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36364; /* 136.364% */
+}
+
+.header__mail-address::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    height: 1px;
+    background: currentColor;
+}
+
+.header__logo-icon {
+    position: absolute;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 21.5px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar__item:last-of-type .navbar__link {
+    padding-right: 0;
+}
+
+/* ====================== Hero ===================================================================== */
+.hero {
+    padding-top: 83px;
+    background: #fbfaff;
+}
+
+.hero__inner {
+    align-items: center;
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    height: auto;
+    width: 92.7%;
+    object-fit: cover;
+}
+
+.hero__media-decor {
+    display: block;
+    position: absolute;
+    width: 164%;
+    left: -39%;
+    bottom: 0;
+}
+
+.hero__content {
+    margin-top: 20%;
+    width: 85%;
+    margin-left: auto;
+}
+
+.hero__heading {
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95; /* 95% */
+}
+
+.hero__desc {
+    width: 87%;
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66667; /* 166.667% */
+}
+
+.hero__cta {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.hero__link {
+    position: relative;
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66667; /* 166.667% */
+}
+
+.hero__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6.1px;
+    height: 1px;
+    background: currentColor;
+}
+
+.hero__social {
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__social-list {
+    margin-left: 15px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(8 4 21 / 10%);
+}
