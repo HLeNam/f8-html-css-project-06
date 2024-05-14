@@ -521,6 +521,15 @@
 }
 
 @media screen and (max-width: 395.998px) {
+    .header-mobile .header__mail-address {
+        margin-left: -15px;
+        font-size: 1.9rem;
+    }
+
+    .about-item__title {
+        font-size: 1.4rem;
+    }
+
     .question-item__content {
         margin-left: 9px;
     }
